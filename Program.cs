@@ -1,13 +1,13 @@
-﻿using System.Text;
-
+﻿
 namespace LeetCodeExam;
 
 internal static class Program
 {
     static void Main(string[] args)
     {
-        var strs = new string[] { "repadafda", "replace", "refoidpasf" };
-        var result = LeetCodeExam.LongestCommonPrefix.LongestCommonPrefixS1(strs);
-        Console.WriteLine(result);
+
+        string s = "  -0012a42";
+        string s1 = "00000-42a1234";
+        Console.WriteLine(MyAtoi.MyAtoiS1(s1));
     }
 }
