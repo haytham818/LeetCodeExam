@@ -1,15 +1,15 @@
 namespace LeetCodeExam;
 
-public class IsValid
+public static class IsValid
 {
-    bool IsValidS1(string s)
+    public static bool IsValidS1(string s)
     {
-        var numOfa = s.Where(x => x == '(').Select(x => x).Count();
-        var numOfb = s.Where(x => x == '[').Select(x => x).Count();
-        var numOfc = s.Where(x => x == '{').Select(x => x).Count();
-        var numOfa1 = s.Where(x => x == ')').Select(x => x).Count();
-        var numOfb1 = s.Where(x => x == ']').Select(x => x).Count();
-        var numOfc1 = s.Where(x => x == '}').Select(x => x).Count();
-        return (numOfa + numOfa1)/2 != 0 || (numOfb + numOfb1)/2 != 0 || (numOfc1 + numOfc) /2 != 0;
+        var list1 = s.Where(item => item == '(').ToList();
+        var list12 = s.Where(item => item == ')').ToList();
+        var list21 = s.Where(item => item == '[').ToList();
+        var list22 = s.Where(item => item == ']').ToList();
+        var list31 = s.Where(item => item == '{').ToList();
+        var list32 = s.Where(item => item == '}').ToList();
+        return (list1.Count == list12.Count) && (list21.Count == list22.Count) && (list31.Count == list32.Count);
     }
 }
