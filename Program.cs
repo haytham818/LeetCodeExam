@@ -8,6 +8,7 @@ internal static class Program
 
         string s = "  -0012a42";
         string s1 = "00000-42a1234";
+        
         Console.WriteLine(MyAtoi.MyAtoiS1(s1));
     }
 }
