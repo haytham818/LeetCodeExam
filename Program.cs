@@ -1,12 +1,13 @@
-﻿
-namespace LeetCodeExam;
+﻿using System;
+using System.Collections.Generic;
 
-internal static class Program
+namespace LeetCodeExam
 {
-    static void Main(string[] args)
+    internal static class Program
     {
-        int dividend = 2147483647;
-        int divisor = -1;
-        Console.WriteLine(Divide.DivideS1(dividend,divisor));
+        private static void Main(string[] args)
+        {
+            System.Console.WriteLine();
+        }
     }
 }
